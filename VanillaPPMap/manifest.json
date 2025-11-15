@@ -1,0 +1,8 @@
+{
+  "base": "refs/heads/main",
+  "include": [
+    "VanillaPPMap/5_mission/**",
+    "VanillaPPMap/3_game/**"
+  ],
+  "exclude": ["**/.gitkeep"]
+}
