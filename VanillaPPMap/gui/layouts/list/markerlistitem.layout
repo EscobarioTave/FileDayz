@@ -1,0 +1,58 @@
+PanelWidgetClass rootFrame {
+ position 0 0
+ size 0.2 30
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ style blank
+ {
+  ImageWidgetClass image {
+   inheritalpha 1
+   ignorepointer 0
+   position 3 0
+   size 24 24
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   image0 "set:ccgui_enforce image:FilterCurrentObjectivesFocus"
+   mode blend
+   "src alpha" 1
+   stretch 1
+  }
+  TextWidgetClass text {
+   ignorepointer 0
+   position 35 0
+   size 0.8 0.8
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   scaled 1
+   style Normal
+   text "Marker1"
+   font "gui/fonts/metronbook-bold"
+   "text valign" center
+  }
+  ImageWidgetClass visible_button {
+   inheritalpha 1
+   ignorepointer 0
+   position 3 0
+   size 30 30
+   halign right_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scriptclass ""
+   image0 "set:ccgui_enforce image:FilterCurrentObjectivesFocus"
+   mode blend
+   "src alpha" 1
+   stretch 1
+  }
+ }
+}
