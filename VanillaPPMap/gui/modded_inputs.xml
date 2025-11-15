@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="UAOpenVPPMap" loc="Open V++ Map" />
+            <input name="UAToggleVPPMap3DMarkers" loc="Show/Hide all 3D Map Markers" />
+        </actions>
+    </inputs>
+    <preset>
+		<input name="UAOpenVPPMap">
+            <btn name="kM">
+            </btn>
+        </input>
+		<input name="UAToggleVPPMap3DMarkers">
+            <btn name="kK">
+            </btn>
+        </input>
+    </preset>
+</modded_inputs>
