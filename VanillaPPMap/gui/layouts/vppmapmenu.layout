@@ -1,0 +1,170 @@
+FrameWidgetClass menu_root {
+ visible 1
+ inheritalpha 0
+ ignorepointer 0
+ color 0.9373 0.9373 0.9373 1
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ priority 0
+ {
+  PanelWidgetClass panel_map {
+   clipchildren 0
+   color 0 0 0 1
+   position 0.0033 0
+   size 0.8 0.99
+   halign right_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scaled 0
+   style rover_sim_black
+   {
+    MapWidgetClass Map_Widget {
+     visible 1
+     clipchildren 0
+     position 0 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     priority 100
+    }
+   }
+  }
+  PanelWidgetClass panel_editdialog {
+   visible 0
+   clipchildren 1
+   ignorepointer 0
+   position 0.0033 0
+   size 0.8 0.99
+   halign right_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style blank
+   {
+    ImageWidgetClass map_fakebg {
+     ignorepointer 0
+     color 0.1569 0.1569 0.1569 1
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     mode blend
+     "src alpha" 1
+     "no wrap" 1
+     stretch 1
+    }
+   }
+  }
+  PanelWidgetClass panel_markers {
+   visible 1
+   color 0 0 0 0.8627
+   position 0.0033 0
+   size 0.19 0.99
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scaled 0
+   style rover_sim_colorable
+   {
+    PanelWidgetClass panel_list_frame {
+     ignorepointer 0
+     color 0 0 0 0.7843
+     position 0 0.017
+     size 0.9 0.87
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style blank
+    }
+    PanelWidgetClass panel_info {
+     ignorepointer 1
+     position 0.05 0.007
+     size 0.9 0.05
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      ImageWidgetClass info_image {
+       ignorepointer 1
+       size 32 32
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       image0 ""
+       imageTexture "{B13BBDAC74B91485}gui/textures/dz_inv_plus_ca.edds"
+       mode blend
+       "src alpha" 1
+       "no wrap" 1
+       stretch 1
+      }
+      MultilineTextWidgetClass info_text {
+       ignorepointer 1
+       size 0.87 0.38
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style DayZNormal
+       text "Double-click map to add a marker"
+       font "gui/fonts/Metron-BoldItalic16"
+       "exact text" 1
+       "size to text h" 1
+       "size to text v" 1
+       "text valign" center
+       wrap 1
+      }
+     }
+    }
+    TextWidgetClass coordinates_text {
+     ignorepointer 1
+     position 0.05 0.085
+     size 0.9 0.02
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     "text halign" center
+     "text valign" center
+    }
+    ButtonWidgetClass openNewsFeed {
+     position 0 0.0595
+     size 0.65 0.021
+     halign center_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style Editor
+     text "View News Feed"
+    }
+   }
+  }
+ }
+}
